@@ -29,7 +29,7 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 48px;
-    color: var(--mist);
+    color: var(--autumn-foliage);
     margin: 0;
     text-shadow: 0 0 5px rgba(118, 54, 38, 0.5)
 }
@@ -52,6 +52,7 @@ header nav ul {
 }
 
 header nav ul li a {
+    margin: 0 25px 0 0;
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -74,62 +75,78 @@ header nav ul li a:hover {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    margin-bottom: 20px;
 }
 
 .hero-cta {
     color: var(--mist);
     text-align: right;
-    margin: 0 35px 25px 0;
+    margin: 0 40px 25px 0;
+    padding:  0 20px 0 0;
     font-size: 20px;
 }
 /* End of hero style */
 
-/* Style applied to next 3 sections */
-#about-me, #work, #contact-me {
-    display: flex;
-    margin: 30px;
-    padding: 10px;
+.flex-container {
     width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-.section-title h2 {
+.section-title {
     color: var(--autumn-foliage);
-    font-size: 36px;
-    margin: 20px;
-    padding: 5px;
+    font-size: 30px;
     text-align: right;
+    margin: 20px 10px 10px 20px;
+    padding: 10px;
+    min-width: 180px;
 }
 
+/* About Me Styling */
 .section-text {
     color: var(--autumn-foliage);
+    margin: 20px 40px 20px 20px;
+    padding: 20px;
     font-size: 20px;
     border-left: 3px solid var(--autumn-foliage);
-    padding: 10px;
-    line-height: 1.5;
 }
 
 .section-text p {
     padding: 10px;
-    margin: 5px;
 }
+/* End About Me Styling */
 
-/* Start of contact me section */
+
+
+
+/* Contact Me Styling */
 .contact-text {
     color: var(--autumn-foliage);
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
     font-size: 30px;
-    width: 100%;
+    display: flex;
+    align-items: center;
     border-left: 3px solid var(--autumn-foliage);
 }
 
-footer a {
+.contact-text ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-text ul li {
+    border-bottom: 3px solid var(--autumn-foliage);
+}
+
+.contact-text a {
     text-decoration: none;
     color: var(--autumn-foliage);
 }
-
-footer ul {
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
+/* End Contact Me Styling */
