@@ -117,8 +117,51 @@ header nav ul li a:hover {
 }
 /* End About Me Styling */
 
+/* Start Work Style */
+.work-grid-container {
+    min-height: 400px;
+    width: 100%;
+    border-left: 3px solid var(--autumn-foliage);
+    color: var(--autumn-foliage);
+    margin: 20px 40px 20px 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
 
+.work-grid-item {
+    padding: 15px 0;
+    border: 2px solid var(--autumn-foliage);
+    border-radius: 15px;
+}
 
+.work-grid-item.run-buddy {
+    width: 100%;
+    min-height: 350px;
+    background-image: url(../images/run-buddy.JPG);
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 / 6;
+    
+}
+
+.work-grid-item.horiseon {
+    background-image: url(../images/horiseon.JPG);
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.work-grid-item.javascript {
+    background-image: url(../images/comingsoon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--stone);
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+}
 
 /* Contact Me Styling */
 .contact-text {
