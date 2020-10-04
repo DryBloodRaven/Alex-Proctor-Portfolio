@@ -132,7 +132,7 @@ header nav ul li a:hover {
 .grid-container {
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     border-left: 3px solid var(--autumn-foliage);
@@ -174,6 +174,11 @@ header nav ul li a:hover {
 }
 
 /* Contact Me Styling */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
 .contact-text {
     color: var(--autumn-foliage);
     width: 80%;
@@ -202,3 +207,136 @@ header nav ul li a:hover {
     color: var(--autumn-foliage);
 }
 /* End Contact Me Styling */
+
+/* Start Mobile Formatting */
+/* Start Media query for smaller laptop screens */
+@media screen and (max-width: 980px) {
+    /* Start of Header adjustments */    
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    /* End of header adjustments */
+
+    /* Start of footer adjustments */
+    footer {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    footer h2 {
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid var(--autumn-foliage);
+    }
+
+    footer ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    /* End of footer adjustments */
+
+    /* Start of About Me, and Work Adjustments */
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    #about-me, #work {
+        justify-content: center;
+    }
+
+    #about-me h2, #work h2 {
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid var(--autumn-foliage);
+    }
+
+    .section-text, .contact-text, .grid-container {
+        border: none;
+    }
+
+    .section-text {
+        text-align: center;
+    }
+
+    .grid-container {
+        width: 100%;
+        align-content: center;
+    }
+    /* End of About Me, Work Adjustments */
+/* End of media query for smaller laptop screens */
+
+/*Start of media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .section-text {
+        font-size: 18px;
+    }
+
+    .contact-text {
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grid-item-1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2:
+    }
+
+    .grid-item-2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .grid-item-3 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+}
+/* End of media query for tablets and smaller */
+
+/* Start of media query for phones */
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        font-size: 18px;
+    }
+
+    .text-block {
+        font-size: smaller;
+    }
+
+    .contact-text {
+        font-size: x-small;
+    }
+}
