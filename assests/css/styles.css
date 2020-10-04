@@ -29,9 +29,8 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 48px;
-    color: var(--autumn-foliage);
+    color: var(--shadow);
     margin: 0;
-    text-shadow: 0 0 5px rgba(118, 54, 38, 0.5)
 }
 
 header a {
