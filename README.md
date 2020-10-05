@@ -13,7 +13,7 @@ Lastly made sure the project weas not just accessable from a computer, but the p
 https://drybloodraven.github.io/Alex-Proctor-Portfolio/
 
 ## Screenshot
-![image](./assets/images/screenshot.PNG)
+![image](./assests/images/screenshot.PNG)
 
 ## Contribution
 Made with ❤️ by Alex Proctor
