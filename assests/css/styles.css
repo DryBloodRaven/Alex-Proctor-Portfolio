@@ -76,7 +76,7 @@ header nav ul li a:hover {
     justify-content: flex-end;
     margin-bottom: 20px;
 }
- img {
+ .headshot img {
      width: 200px;
      height: 300px;
      border: 3px solid var(--autumn-foliage);
